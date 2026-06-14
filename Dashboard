@@ -1,0 +1,20 @@
+Kubernetes Dashboard Setup on AWS EC2 (kubeadm Cluster
+Environment
+This setup assumes the following environment:
+
+AWS EC2 Instances
+├── k8s-master
+├── k8s-worker1
+
+Kubernetes Installation
+├── kubeadm
+├── containerd/docker
+Step 1: Verify Cluster Health
+Login to the Kubernetes Master Node.
+
+kubectl get nodes
+Expected Output:
+
+NAME         STATUS
+k8s-master   Ready
+k8s-worker1  Ready
